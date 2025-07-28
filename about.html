@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muhammad</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #999;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "left main right"
+            "footer footer footer";
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto 1fr;
+            min-height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: #333;
+            color: rgb(195, 203, 211);
+            text-align: center;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .left {
+            background: #b1babe;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left {
+            grid-area: left;
+            background: #c5c6c8;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            align-self: self-start;
+            height: fit-content;
+        }
+        
+        main {
+            grid-area: main;
+            background:rgb(238, 238, 241);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        footer {
+            grid-area: footer;
+            background: #a4a7aa;
+            color: beige;
+            text-align: center;
+            padding: 10px;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        p {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                "header"
+                "main"
+                "left"
+                "right"
+                "footer";
+                grid-template-columns: 1fr;
+            
+                
+
+            }
+            
+        }
+        .profile-pic {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin: 10px 0;
+            border: 4px solid rgb(146, 149, 153);
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0,3);
+            z-index: 999;
+
+        }
+        .back-to-top:hover {
+            background-color: #218838;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <a id="top"></a>
+    <div class="container">
+        <header>
+          <h1>LABSPACE NIGERIA</h1>
+          <p> NATIONAL HYBRID SIWES</p>
+        </header>
+        <aside class="left">
+            <h2>About NHS Labspace Nigeria</h2>
+            <p><strong>This project is for learning purposes only By Muhammad Mukhtar Muhammad </strong></p>
+              <p> <strong><i> NHS Labspace  Nigeria hosts diverse interns-some of whom are Supported by Alhaji Salihu Kantigi. </i></strong> </p>
+              <p><strong>We are Directed and Guided by our Hub
+                
+                
+                Manager <br> Miss Nafisat Aguye, and Our personal tutor is Mr
+         Elhajai Paul</strong></p>
+<p><a href="index.html"> Back to Home</a></p>
+
+        </aside>
+        <main>
+            <h2>Meet Some of NHS Facilitators And Interns</h2><br>
+            <strong>SPONSOR</strong>
+            <img src="images/sponsor.jpg" alt="sponsor" class="profile-pic">
+            Alhaji Salihu Kantigi
+        
+            <p></p>
+            <strong>HUB MANAGER</strong>
+            
+            <img src="images/hub manager.jpg" alt="hub manager" class="profile-pic">
+            Miss Nafisat Aguye
+            <p></p>
+            <strong>WEB DEV. TUTOR</strong>
+            <img src="images/web dev tutor.png" alt=" wed dev tutor" class="profile-pic">
+            mr. Elijah paul
+            <p></p>
+            <strong> INTERN: <br>Web development</strong>
+            <img src="images/mukhtar.jpg" alt="mukhtar" class="profile-pic">
+            Muhammad Mukhtar Muhammad
+            <P></P>
+            <strong> INTERN: <br>project management</strong>
+            <img src="images/sumayya.jpg" alt="sumayya" class="profile-pic">
+            Sumayya Giwa
+            <p></p>
+            <strong>INTERN: <br> project management</strong>
+            <img src="images/ahmad.jpg" alt="ahmad" class="profile-pic">
+            Ahmad Kabeer
+            <p></p>
+            <strong>INTERN: <br> Data Analysis
+            </strong>
+            <img src="images/muhammad.jpg" alt="muhammad" class="profile-pic">
+            Muhammad Haruna
+            <p></p>
+            <strong>INTERN: <br>Cloud Computing</strong>
+            <img src="images/haj. nafisat.jpg" alt="haj nafisat" class="profile-pic">
+            HAJ. NAFISAT
+            <p></p>
+            <strong>INTERN: <br> WEB DEVELOPMENT</strong>
+            <img src="images/shukurat.jpg" alt="shukurat" class="profile-pic">
+            KASIM SHUKURAT
+            <p></p>
+            <strong>INTERN: <br> WEB DEVELOPMENT</strong>
+            <img src="images/saidu.jpg" alt="saidu" class="profile-pic">
+            SAIDU ALAMIN HASSAN
+            <P></P>
+            <strong>INTERN: <br> DATA ANALYSIS</strong>
+            <img src="images/aisha.jpg" alt="aisha" class="profile-pic">
+            AISHA HUMAIRA
+            <P></P>
+            <strong>INTERN: <br> CLOUD COMPUTING</strong>
+            <img src="images/faruq.jpg" alt="faruq" class="profile-pic">
+            UMAAR FAROUK YUSUF
+            <hr><hr>
+            <P></P>
+            &copy; 2025 Muhammad Mukhtar Muhammad-Web Dev Intern.
+
+        </main>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
+</body>
+
+</html>
